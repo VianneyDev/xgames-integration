@@ -1,0 +1,27 @@
+textarea {
+    resize: none;
+}
+
+#contact {
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    margin-bottom: 5px;
+    height: 20px;
+    width: 220px;
+    border: 1px solid #ccc;
+}
+
+form textarea {
+    height: 80px;
+    width: 237px;
+}

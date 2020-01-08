@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
+
+@font-face {
+    font-family: "Facile Sans";
+    src: url("../fonts/FacileSans.ttf") format("ttf");
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Facile Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'Facile Sans', sans-serif;
+}
+
+li {
+    list-style-type:none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topBtn {
+    position: fixed;
+    z-index: 20;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    background: #34495e;
+    color: #fed351;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    h1 {
+        font-size: 28px;
+        margin: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+}
+
+
+
+.wrapper {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: inherit;
+    position: relative;
+    overflow: hidden;
+
+    -webkit-transition: 0.2s; /* Safari */
+    transition: 0.2s;
+}
+
+.wrapper2 {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: inherit;
+    position: relative;
+    overflow: hidden;
+
+    -webkit-transition: 0.2s; /* Safari */
+    transition: 0.2s;
+}
+
+.wrapper .info {
+    height: inherit;
+    width: 100%;
+
+    position: absolute;
+    bottom: -100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    -webkit-transition: 0.4s; /* Safari */
+    transition: 0.4s;
+}
+
+.wrapper2 .info {
+    width: 100%;
+
+    position: absolute;
+    bottom: -100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    -webkit-transition: 0.4s; /* Safari */
+    transition: 0.4s;
+}
+
+.wrapper .info img {
+    width: 50%;
+    margin-bottom: 3px;
+}
+
+.wrapper2 .info img {
+    width: 30% !important;
+    min-width: 20px !important;
+    margin-bottom: 3px;
+}
+
+.wrapper:hover .info {
+    bottom: 0;
+
+    -webkit-transition: 0.2s; /* Safari */
+    transition: 0.2s;
+}
+
+.wrapper2:hover .info {
+    bottom: 0;
+
+    -webkit-transition: 0.2s; /* Safari */
+    transition: 0.2s;
+}

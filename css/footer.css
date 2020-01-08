@@ -1,0 +1,126 @@
+/* Typos */
+
+@font-face 
+{
+    font-family: 'helvetica_neueregular';
+    src: url('../fonts/helveticaneue-roman-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (min-width: 1000px) {
+	footer {
+		height: 90px;
+		width: 100%;
+		background: url("../img/background.jpg");
+		background-size: cover;
+
+		display: flex;
+	}
+
+	footer:after {
+		content: "";
+
+		height: 90px;
+		width: 100%;
+
+		background: linear-gradient(white, rgba(0, 0, 0, 0));
+		position: absolute;
+		z-index: 2;
+	}
+
+	footer nav {
+		width: 100%;
+		height: inherit;
+		margin: 0;
+		position: relative;
+		z-index: 3;
+	}
+
+	footer nav ul {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: 0;
+		margin-top: 20px;
+
+	}
+
+	footer nav ul li {
+		font-size: 20px;
+	}
+
+	footer nav ul li a {
+		text-decoration: none;
+		font-family: 'helvetica_neueregular';
+		color: #4f4f4f;
+	}
+
+	footer nav ul li:hover a {
+		text-decoration: none;
+		color: #202020;
+
+		-webkit-transition: 0.2s; /* Safari */
+		transition: 0.2s;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	footer {
+		height: 200px;
+		width: 100%;
+		background: url("../img/background.jpg");
+		background-size: 140%;
+
+		display: flex;
+	}
+
+	footer:after {
+		content: "";
+
+		height: 160px;
+		width: 100%;
+
+		background-image: linear-gradient(white, rgba(0, 0, 0, 0));
+		position: absolute;
+		z-index: 2;
+	}
+
+	footer nav {
+		width: 100%;
+		height: inherit;
+		margin: 0;
+		position: relative;
+		z-index: 3;
+	}
+
+	footer nav ul {
+		margin: auto;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		padding: 0;
+		margin-top: 20px;
+	}
+
+	footer nav ul li {
+		font-size: 24px;
+	}
+
+	footer nav ul li a {
+		text-decoration: none;
+		color: #4f4f4f;
+	}
+
+	footer nav ul li:hover a {
+		text-decoration: none;
+		color: #202020;
+
+		-webkit-transition: 0.2s; /* Safari */
+		transition: 0.2s;
+	}
+}
